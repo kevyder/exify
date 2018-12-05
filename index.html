@@ -14,10 +14,13 @@
     <h1>Exify</h1>
   </header>
   <main>
-    <input type="file" name="photograph" id="photograph">
+    <div class="upload-btn-wrapper">
+      <button class="btn">Choose an image</button>
+      <input type="file" name="photograph" id="photograph">
+    </div>
     <img src id="image" />
-    <br />
     <pre id="result"></pre>
+    <button id="copy">Copy to clipboard</button>
   </main>
   <script src="app.js"></script>
 </body>
