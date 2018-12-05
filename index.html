@@ -7,13 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exify</title>
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
 </head>
-<header>
-  <h1>Exify</h1>
-</header>
-
 <body>
-  <!-- Insert link to app.js here -->
+  <header>
+    <h1>Exify</h1>
+  </header>
+  <main>
+    <input type="file" name="photograph" id="photograph">
+    <img src id="image" />
+    <br />
+    <pre id="result"></pre>
+  </main>
   <script src="app.js"></script>
 </body>
 
