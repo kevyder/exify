@@ -1,4 +1,4 @@
-const cacheName = 'exify-v1';
+const cacheName = 'exify-v1.1';
 
 const staticAssets = [
   './',
