@@ -34,3 +34,20 @@ document.getElementById('photograph').onchange = function (e) {
     })
   }
 }
+
+
+document.getElementById('copy').onclick = function (e) {
+  var exif = document.getElementById("result")
+  var range = document.createRange()
+  range.selectNode(exif)
+  window.getSelection().addRange(range)
+  document.execCommand("copy")
+  try {
+    var successful = document.execCommand('copy')
+    var msg = successful ? 'successful' : 'unsuccessful'
+    console.log(msg)
+  } catch (err) {
+    console.log('Oops, unable to copy')
+  }
+  window.getSelection().removeAllRanges()
+}
