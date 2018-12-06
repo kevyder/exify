@@ -11,7 +11,9 @@ document.getElementById('photograph').onchange = function (e) {
     var image = new FileReader()
     image.readAsDataURL(file)
     image.onload = function () {
-      document.getElementById('image').src = image.result
+      var imageElement = document.getElementById('image')
+      imageElement.src = image.result
+      imageElement.style.display = "block"
     }
     EXIF.getData(file, function () {
       var button = document.getElementById('copy')
