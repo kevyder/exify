@@ -8,20 +8,26 @@
   <meta name="theme-color" content="#000" />
   <title>Exify</title>
   <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:700" rel="stylesheet"> 
+  <!-- <link rel="manifest" href="manifest.json"> -->
 </head>
 <body>
-  <header>
-    <h1>Exify</h1>
-  </header>
   <main>
-    <div class="upload-btn-wrapper">
-      <button class="btn">Choose an image</button>
-      <input type="file" name="photograph" id="photograph" accept="image/*">
+    <div class="container">
+      <div class="wrap">
+        <h1 class="title">Exify</h1>
+        <div class="upload-btn-wrapper">
+          <button class="btn">Choose an photo...</button>
+          <input type="file" name="photograph" id="photograph" accept="image/*">
+        </div>
+
+        <div id="results">
+            <img src id="image" />
+            <pre id="result"></pre>
+            <button id="copy">Copy to clipboard</button>
+        </div>
+      </div>
     </div>
-    <img src id="image" />
-    <pre id="result"></pre>
-    <button id="copy">Copy to clipboard</button>
   </main>
   <script src="js/exif.js"></script>
   <script src="app.js"></script>

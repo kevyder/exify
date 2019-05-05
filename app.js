@@ -11,6 +11,8 @@ document.getElementById('photograph').onchange = function (e) {
     var image = new FileReader()
     image.readAsDataURL(file)
     image.onload = function () {
+      var resultElement = document.getElementById('results')
+      resultElement.style.display = "block"
       var imageElement = document.getElementById('image')
       imageElement.src = image.result
       imageElement.style.display = "block"

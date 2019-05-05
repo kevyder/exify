@@ -1,11 +1,10 @@
-const cacheName = 'exify-v1.2';
+const cacheName = 'exify-app';
 
 const staticAssets = [
   './',
   './app.js',
   './styles/main.css',
-  './js/exif.js',
-  './js/color-thief.min.js'
+  './js/exif.js'
 ];
 
 self.addEventListener('install', async function () {
